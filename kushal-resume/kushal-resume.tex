@@ -3,31 +3,30 @@
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \usepackage{hyperref} 
+\usepackage{graphicx}
 \makeatother
+\usepackage{grffile} 
 
-\begin{document}
+%for floating figures
+\usepackage{wrapfig}
+\usepackage{float}
+%\floatstyle{boxed} 
+%\restylefloat{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\lastupdated
+%for drawing graphics		
+\usepackage{tikz}				
+\usetikzlibrary{shapes, backgrounds,mindmap, trees}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{document}s
 \namesection{Kushal}{Roy} { \urlstyle{same} 
-\href{mailto:rkus2007@gmail.com}{rkus2007@gmail.com} | +91 9686583136} \\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Software Developer | Technical Expert | SDE at PayPal | 
+\href{mailto:rkus2007@gmail.com}{rkus2007@gmail.com} | +91 9686583136} 
+%%%%%%%%%%s%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%s	%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t]{0.33\textwidth} 
 
@@ -52,7 +51,7 @@
 
 \section{Links}
 Github:// \href{https://github.com/kushal-r}{\custombold{kushal-r}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/roykushal/}{\custombold{roykushal}} \\
+LinkedIn: \href{https://www.linkedin.com/in/roykushal/}{\custombold{https://www.linkedin.com/in/roykushal	}} \\
 \sectionsep
 
 
@@ -60,13 +59,9 @@ LinkedIn://  \href{https://www.linkedin.com/in/roykushal/}{\custombold{roykushal
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{\topsep}
-\subsection{Undergraduate}
-Operating Systems \\
-Artificial Intelligence  \\
-Computer Graphics  \\
-Software Engineering \\
-Image Processing \\
-{\footnotesize \textit{\textbf{(Research Project: Face Detection and Identification using Artificial Neural Network on MATLAB) }}} \\
+\subsection{Recognitions}
+\textbullet{} {\footnotesize \textit{\textbf{Awarded Making a Difference(Quality) for detection and eradication of issues in the application before even it reaching the customers, resulting in zero customer escalations during release. }}} \\
+\textbullet{} {\footnotesize \textit{\textbf{Awarded Bias For Action for contributions made towards the identification and safeguarding from Common Vulnerabilities and Exposures (CVE ) in the open source artifact that ships along with the product. }}}  \\  
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,7 +91,6 @@ Eclipse PDT \textbullet{} Android \\
 \sectionsep
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
@@ -107,6 +101,13 @@ Eclipse PDT \textbullet{} Android \\
 \hfill
 \begin{minipage}[t]{0.66\textwidth}
 	
+
+\section{Details}
+\descript{Date Of Birth : 29.10.1988 }
+\descript{Nationalty : Indian }
+\descript{Marital Status : Single }
+\descript{Languages Spoken : English }
+\sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,9 +120,9 @@ Eclipse PDT \textbullet{} Android \\
 \vspace{\topsep}
 \begin{tightemize}\item Developed PayPal's first ever Data Life-cycle management application, for auditing, deployment, lineage, monitoring and metrics collection.
 Analyzing and reviewing requirements, writing design documents, estimating efforts, programming and delivering a complete end-to-end solution for the company.
-\item Implemented a rule engine for parsing SQL scripts and preventing unlawful queries getting executed, standardizing the Automation Engine scripts that can be deployed into the system.
+\item Implemented a rule engine for parsing SQL scripts and preventing unlawful queries getting executed.
 \item Engineered a custom health monitoring and metrics collecting  solution of all automated workflows running across company.
-The metrics is processed by an autonomous SLA re-calibration engine built on regression based machine learning model.
+\item Designed a Metrics Analyzer for autonomous SLA re-calibration using regression based machine learning model.
 \item Developed a database crawler for parsing history query logs from Teradata and linking lineage based on GIT, JIRA, ServiceNow.
 \item Retrofitted PayPal's enterprise task scheduler with a REST API gateway for limiting the number of parallel connections.
 \end{tightemize}
@@ -133,9 +134,7 @@ The metrics is processed by an autonomous SLA re-calibration engine built on reg
 \begin{tightemize}
 \item Developed \href{https://buy.hpe.com/us/en/synergy/synergy-management/synergy-image-streamer/synergy-image-streamer/hpe-synergy-image-streamer/p/1008615214}{HPE Synergy Image Streamer} server provisioning appliance.
 Image Streamer is a small piece of software that sits on HPE Blade Server, taking care of automated os deployment.
-\item Designed and developed an artifact manager for managing objects like personalized scripts, ISO images and volumes used during OS deployment. \\
-	    {\footnotesize \textit{\textbf{Awarded Making a Difference(Quality) for detection and eradication of issues in the application before even it reaching the customers, resulting in zero customer escalations during release. }}} \\
-	    {\footnotesize \textit{\textbf{Awarded Bias For Action for contributions made towards the identification and safeguarding from Common Vulnerabilities and Exposures (CVE ) in the open source artifact that ships along with the product. }}}  \\
+\item Designed and developed an artifact manager for managing objects like personalized scripts, ISO images and volumes used during OS deployment. 
 \end{tightemize}
 \sectionsep
 
