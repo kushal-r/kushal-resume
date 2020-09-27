@@ -7,6 +7,11 @@
 
 \documentclass[]{article}
 \NeedsTeXFormat{LaTeX2e}
+\DeclareOption{print}{\def\@cv@print{}}
+\DeclareOption*{%
+  \PassOptionsToClass{\CurrentOption}{article}
+}
+\ProcessOptions\relax
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
@@ -20,6 +25,13 @@
 \usepackage{fontawesome5}
 \usepackage{tabularx}
 \usepackage{tabulary}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 %-------------------------------------------------- SETTINGS --------------------------------------------------
 
@@ -76,7 +88,6 @@
 \textblockorigin{0mm}{5mm} % start everyth
 \newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
-Last Updated on
 \today
 \end{textblock}}
 
@@ -84,7 +95,8 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1
+    \fontspec[Path = fonts/lato/]{Lato-Hai}
+    \fontsize{40pt}{10cm}\selectfont #1
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	}\\
     \vspace{5pt}
@@ -149,10 +161,11 @@ Last Updated on
 
 \begin{document}
 %-------------------------------------------------- HEADER --------------------------------------------------
+\lastupdated
 
-\namesectiondouble{Kushal}{Roy}{\linkedin}{\github}{\phone}{\email}
+%\namesectiondouble{Kushal}{Roy}{\linkedin}{\github}{\phone}{\email}
 
-%\namesection{Kushal}{Roy} { \urlstyle{same} \href{mailto:rkus2007@gmail.com}{rkus2007@gmail.com} | \ +91 9686583136}
+\namesection{Kushal}{Roy} { \urlstyle{same} \href{mailto:rkus2007@gmail.com}{rkus2007@gmail.com} | \ +91 9686583136}
 
 %-------------------------------------------------- LEFT PANEL ----------------------------------------------
 
@@ -160,7 +173,7 @@ Last Updated on
 
 %-------------------------------------------------- EDUCATION ----------------------------------------------
 
-    \section{Education}
+  \section{Education}
     \subsection{NIT Durgapur}
     \descript{B.Tech in Computer Science Engineering}
     \location{Aug 2007 - April 2011| Durgapur, India \\Cum. GPA: 7.40 / 10.0}
@@ -172,14 +185,25 @@ Last Updated on
 
 %-------------------------------------------------- AWARDS ----------------------------------------------
 
-    \section{Recognitions}
-    \begin{tabulary}{\linewidth}{LLL}
-    HPE & Making a Difference - Detection and eradication of issues in the application before even it reaching the customers, resulting in zero customer escalations during release. \\
-    HPE & Bias For Action - Contributions made towards the identification and resolution of Common Vulnerabilities and Exposures (CVE) in the open source artifact that ships along with the product.
-    \end{tabulary}
+    \section{Links}  
+    Github:// \href{https://github.com/kushal-r}{\bf kushal-r} \\
+    LinkedIn://  \href{https://www.linkedin.com/in/roykushal/}{\bf roykushal} \\
     \sectionsep
 
 %-------------------------------------------------- SKILLS ----------------------------------------------
+
+    \section{Coursework}
+    \subsection{Undergraduate}
+    Information Retrieval \\
+    Operating Systems \\
+    Software Engineering \\
+    Artificial Intelligence \\
+    Computer Graphics \\
+    Unix Tools and Scripting \\
+    {\footnotesize \textit{\textbf{(Research Project: Face Detection and Identification using Artificial Neural Network on MATLAB) }}}
+    \sectionsep
+%-------------------------------------------------- SKILLS ----------------------------------------------
+    
     \section{Skills}
     \subsection{Programming}
     \location{\textbf{Languages}:}
@@ -260,6 +284,16 @@ Last Updated on
     \end{tightemize}
     \sectionsep
 
+
+%-------------------------------------------------- AWARDS ----------------------------------------------
+
+  \section{Recognitions}
+  \begin{tabulary}{\linewidth}{LLL}
+  HPE & Making a Difference - Detection and eradication of issues in the application before even it reaching the customers, resulting in zero customer escalations during release. \\
+  HPE & Bias For Action - Contributions made towards the identification and resolution of Common Vulnerabilities and Exposures (CVE) in the open source artifact that ships along with the product.
+  \end{tabulary}
+  \sectionsep
+ 
 %-------------------------------------------------- RIGHT PANEL END ----------------------------------------------
 \end{minipage}
 
